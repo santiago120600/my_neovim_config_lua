@@ -13,12 +13,16 @@ return {
         n = {
             ["<leader>ff"] = {
                 function()
-                    require("telescope.builtin").find_files({
-                        cwd = vim.fn.getCwd()                    
-                      })
+                    require("telescope.builtin").find_files()
                 end,
                 desc = "Find Files",
             },
+            ["<leader>fb"] = {
+              function()
+                  require("telescope.builtin").buffers()
+              end,
+              desc = "Find buffer",
+          },
         },
     },
 }

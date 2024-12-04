@@ -100,9 +100,10 @@ Run the command `:checkhealth` in Neovim to check the health of your setup.
 | `<leader>e` | Open        | n    |
 
 **Telescope**
-| Key          | Description | Mode |
-| :----------- | :---------- | ---- |
-| `<leader>ff` | Find Files  | n    |
+| Key          | Description  | Mode |
+| :----------- | :----------- | ---- |
+| `<leader>ff` | Find Files   | n    |
+| `<leader>fb` | Find buffers | n    |
 
 **Telescope**
 | Key          | Description   | Mode |
