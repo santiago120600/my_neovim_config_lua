@@ -57,6 +57,7 @@ If this directory does not exist, create it and put your config file there.
 - **[Noice](https://github.com/folke/noice.nvim)**: A modern message bubbles plugin for displaying messages and warnings in Neovim.
 - **[which-key](https://github.com/folke/which-key.nvim)**: A plugin that displays a key map for Vim and Neovim.
 - **[mini-surround](https://github.com/echasnovski/mini.surround)**: A compact and feature-rich plugin for surround mode operations (e.g., surround with quotes, parentheses, etc.).
+- **[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)**: A completion plugin for Neovim.
 
 ## Check Health
 Run the command `:checkhealth` in Neovim to check the health of your setup.
