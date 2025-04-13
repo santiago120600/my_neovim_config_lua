@@ -7,6 +7,9 @@ return {
       "MunifTanjim/nui.nvim",
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     },
+    keys = {
+      { "<leader>nt", "<cmd>Neotree toggle<cr>", desc = "Toggle NeoTree" },
+    },
     opts = {
         event_handlers = {
             {
