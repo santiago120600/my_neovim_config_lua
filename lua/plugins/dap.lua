@@ -9,6 +9,10 @@ return {
       
       -- Mason DAP installer
       "jay-babu/mason-nvim-dap.nvim",
+
+      "nvim-neotest/nvim-nio",
+
+      'mfussenegger/nvim-dap-python'
     },
     keys = {
       -- DAP keybindings
@@ -26,19 +30,8 @@ return {
       local dap = require("dap")
       local dapui = require("dapui")
       local mason_nvim_dap = require("mason-nvim-dap")
-      
-      -- Set up Mason DAP adapters
-      mason_nvim_dap.setup({
-        ensure_installed = { "javadbg", "javatest" },
-        automatic_installation = true,
-        handlers = {
-          function(config)
-            -- Default setup for adapters without special configuration
-            mason_nvim_dap.default_setup(config)
-          end,
-        },
-      })
-      
+      require("dap-python").setup(vim.g.python3_host_prog)
+
       -- Configure DAP UI
       dapui.setup({
         icons = { expanded = "▾", collapsed = "▸", current_frame = "▸" },
@@ -79,15 +72,5 @@ return {
         all_frames = false,
       })
       
-      -- Java configuration (since you have JDTLS)
-      dap.configurations.java = {
-        {
-          type = "java",
-          request = "attach",
-          name = "Attach to the process",
-          hostName = "localhost",
-          port = 5005,
-        },
-      }
     end,
   }

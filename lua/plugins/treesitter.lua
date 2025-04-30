@@ -35,7 +35,11 @@ return {
         highlight = { enable = true },
         indent = { enable = true },
         ensure_installed = {
-          "java"
+          "java",
+          "lua",
+          "vim",
+          "vimdoc",
+          "python"
         },
         incremental_selection = {
           enable = true,

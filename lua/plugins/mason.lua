@@ -7,10 +7,8 @@ return {
     opts_extend = { "ensure_installed" },
     opts = {
       ensure_installed = {
-        "jdtls",
-        "java-debug-adapter",
-        "java-test",
-        "cucumber-language-server"
+        "pyright",
+        "python-lsp-server",
       },
     },
     ---@param opts MasonSettings | {ensure_installed: string[]}

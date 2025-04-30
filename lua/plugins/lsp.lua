@@ -1,5 +1,4 @@
 return {
-    -- LSP Configuration
     {
       "neovim/nvim-lspconfig",
       event = { "BufReadPre", "BufNewFile" },
@@ -24,6 +23,9 @@ return {
         
         -- Configure LSP settings
         local lspconfig = require("lspconfig")
+        lspconfig.pyright.setup({
+            fyletypes = { "python" }
+        })
         
         -- Configure diagnostic options
         vim.diagnostic.config({
@@ -66,8 +68,7 @@ return {
         mason_lspconfig.setup({
           -- Servers that should be automatically installed if they're not already installed
           ensure_installed = {
-            "jdtls", 
-            "cucumber_language_server",
+            "pyright",
           },
           -- Auto-install configured servers (with lspconfig)
           automatic_installation = true,
