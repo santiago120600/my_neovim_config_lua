@@ -30,7 +30,7 @@ return {
       local dap = require("dap")
       local dapui = require("dapui")
       local mason_nvim_dap = require("mason-nvim-dap")
-      require("dap-python").setup(vim.g.python3_host_prog)
+      require("dap-python").setup("python3")
 
       -- Configure DAP UI
       dapui.setup({

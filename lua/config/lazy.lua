@@ -27,7 +27,6 @@ vim.g.loaded_netrwPlugin = 1
 -- Disable the LazyVim order check
 vim.g.lazyvim_check_order = false
 
-vim.g.python3_host_prog = 'C:/Users/santi/.pyenv/pyenv-win/versions/3.13.2/python.exe'
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
