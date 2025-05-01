@@ -9,6 +9,9 @@ return {
       ensure_installed = {
         "pyright",
         "python-lsp-server",
+        "jdtls",
+        "java-debug-adapter",
+        "java-test", 
       },
     },
     ---@param opts MasonSettings | {ensure_installed: string[]}
