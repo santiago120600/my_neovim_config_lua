@@ -38,7 +38,6 @@ If this directory does not exist, create it and put your config file there.
 - **[Mini-move](https://github.com/echasnovski/mini.move)**: A plugin for easy movement of text in Neovim.
 - **[treesitter](https://github.com/nvim-treesitter/nvim-treesitter)**: A parser generator tool and an incremental parsing library.
 - **[lualine](https://github.com/nvim-lualine/lualine.nvim)**: A blazing fast and easy to configure Neovim statusline.
-- **[mini-starter](https://github.com/echasnovski/mini.starter)**: A minimal starter for Neovim.
 - **[mason](https://github.com/williamboman/mason.nvim)**: A package manager for Neovim.
 - **[trouble](https://github.com/folke/trouble.nvim)**: A plugin for managing and displaying diagnostics.
 - **[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)**: A completion plugin for Neovim.
@@ -48,9 +47,27 @@ If this directory does not exist, create it and put your config file there.
 - **[mini-surround](https://github.com/echasnovski/mini.surround)**: A compact and feature-rich plugin for surround mode operations (e.g., surround with quotes, parentheses, etc.).
 - **[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)**: A completion plugin for Neovim.
 - **[avante](https://github.com/yetone/avante.nvim)**: Emulate the behaviour of the Cursor IDE
+- **[vim-tig](https://github.com/codeindulgence/vim-tig)**: Tig integration
 
 ## Check Health
 Run the command `:checkhealth` in Neovim to check the health of your setup.
+
+## Message History
+Run the command `:Noice` in Neovim to show a full message history
+
+## Tig
+| Command                                          | Description                          |
+|:-------------------------------------------------|:-------------------------------------|
+| `:Tig!`                                          | show commit log of current file      |
+| `:Tig        [options] [revisions] [--] [paths]` | Start up in status view              |
+| `:Tig status`                                    | Start up in status view              |
+| `:Tig log    [options] [revisions] [--] [paths]` | Start up in log view                 |
+| `:Tig show   [options] [revisions] [--] [paths]` | Open diff view                       |
+| `:Tig reflog [options] [revisions]`              | Start up in reflog view              |
+| `:Tig blame  [options] [rev] [--] path`          | Show given file annotated by commits |
+| `:Tig grep   [options] [pattern]`                | Open the grep view                   |
+| `:Tig refs   [options]`                          | Start up in refs view                |
+| `:Tig stash  [options]`                          | Start up in stash view               |
 
 ## Default shortcuts
 [Here](https://www.lazyvim.org/keymaps) you can find the list of default shortcuts for efficient navigation and editing in Neovim.
@@ -129,7 +146,7 @@ Run the command `:checkhealth` in Neovim to check the health of your setup.
 | `<Ctl>j` | Move down   | n,v  |
 | `<Ctl>k` | Move up     | n,v  |
 
--**avante**
+**avante**
 | Key          | Description                                  | Mode |
 |--------------|----------------------------------------------|------|
 | `<Leader>aa` | show sidebar                                 | n    |
