@@ -12,7 +12,10 @@ return {
 
       "nvim-neotest/nvim-nio",
 
-      'mfussenegger/nvim-dap-python'
+      "mfussenegger/nvim-dap-python",
+
+      "mfussenegger/nvim-jdtls",
+
     },
     keys = {
       -- DAP keybindings
