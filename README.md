@@ -45,9 +45,9 @@ If this directory does not exist, create it and put your config file there.
 - **[Noice](https://github.com/folke/noice.nvim)**: A modern message bubbles plugin for displaying messages and warnings in Neovim.
 - **[which-key](https://github.com/folke/which-key.nvim)**: A plugin that displays a key map for Vim and Neovim.
 - **[mini-surround](https://github.com/echasnovski/mini.surround)**: A compact and feature-rich plugin for surround mode operations (e.g., surround with quotes, parentheses, etc.).
-- **[nvim-cmp](https://github.com/hrsh7th/nvim-cmp)**: A completion plugin for Neovim.
+- **[blink.cmp](https://github.com/Saghen/blink.cmp)**: A completion plugin for Neovim.
 - **[avante](https://github.com/yetone/avante.nvim)**: Emulate the behaviour of the Cursor IDE
-- **[vim-tig](https://github.com/codeindulgence/vim-tig)**: Tig integration
+- **[vim-tig](https://github.com/codeindulgence/vim-tig)**: [Tig](https://jonas.github.io/tig/) integration
 
 ## Check Health
 Run the command `:checkhealth` in Neovim to check the health of your setup.
@@ -81,6 +81,13 @@ Run the command `:Noice` in Neovim to show a full message history
 | o    | Open line below mode  | Press `o`               |
 | i    | Insert mode           | Press `i`               |
 | s    | Select mode           | Press `s`               |
+
+**Blink**
+| Key       | Description         | Mode |
+|:----------|:--------------------|------|
+| `<ctrl>n` | Next suggestion     | n    |
+| `<ctrl>p` | Previous suggestion | n    |
+| `<ctrl>y` | Accept suggestion   | n    |
 
 **Surround**
 | Key     | Description                  | Mode |
