@@ -8,3 +8,6 @@ vim.g.lazyvim_prettier_needs_config = false
 
 -- Enable splitting of windows to the right when using :split command
 vim.opt.splitright = true 
+
+-- Show line numbers
+vim.opt.number = true

@@ -174,3 +174,23 @@ Run the command `:Noice` in Neovim to show a full message history
 | `[x`         | move to next conflict                        | n    |
 | `[[`         | jump to previous codeblocks (results window) | n    |
 | `]]`         | jump to next codeblocks (results windows)    | n    |
+
+**LazyGit**
+| Key      | Description                            |
+|----------|----------------------------------------|
+| `:`      | Execute shell command                  |
+| `q`      | Quit                                   |
+| `<Ctl>t` | Open external diff tool (git difftool) |
+
+**LSP**
+| Key          | Description          | Mode |
+|--------------|----------------------|------|
+| `gd`         | Go to definition     | n    |
+| `gD`         | Go to declaration    | n    |
+| `gi`         | Go to implementation | n    |
+| `gr`         | Go to references     | n    |
+| `K`          | Hover documentation  | n    |
+| `<C-k>`      | Signature help       | n    |
+| `<leader>cr` | Rename symbol        | n    |
+| `<leader>ca` | Code actions         | n    |
+| `<leader>cf` | Format code          | n    |

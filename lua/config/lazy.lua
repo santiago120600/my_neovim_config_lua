@@ -27,6 +27,13 @@ vim.g.loaded_netrwPlugin = 1
 -- Disable the LazyVim order check
 vim.g.lazyvim_check_order = false
 
+-- Load options
+require("config.options")
+-- Load keymaps
+require("config.keymaps")
+-- Load autocmds
+require("config.autocmds")
+
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
