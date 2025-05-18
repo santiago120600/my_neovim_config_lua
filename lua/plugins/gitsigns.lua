@@ -1,5 +1,6 @@
 return {
   "lewis6991/gitsigns.nvim",
+  commit = "140ac646db125904e456e42ab8b538d28f9607d7",
   event = { "BufReadPre", "BufNewFile" },
   opts = {
     -- Configuration options go here, see :help gitsigns

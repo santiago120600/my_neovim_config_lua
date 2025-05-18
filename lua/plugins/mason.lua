@@ -1,6 +1,7 @@
 return {
-
     "williamboman/mason.nvim",
+    version = "1.11.0",
+    commit = "3b5068f0fc565f337d67a2d315d935f574848ee7",
     cmd = "Mason",
     keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
     build = ":MasonUpdate",
@@ -12,6 +13,13 @@ return {
         "jdtls",
         "java-debug-adapter",
         "java-test", 
+      },
+    },
+    dependencies = {
+      {
+        "williamboman/mason-lspconfig.nvim",
+        version = "1.31.0",
+        commit = "1a31f824b9cd5bc6f342fc29e9a53b60d74af245",
       },
     },
     ---@param opts MasonSettings | {ensure_installed: string[]}
