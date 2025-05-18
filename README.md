@@ -21,13 +21,12 @@ If this directory does not exist, create it and put your config file there.
   scoop bucket add main
   scoop install main/ripgrep
   ```
-- **Treesitter**: Install parser using `:TSInstall {parser_name}`
-- **pynvim**:
+- **[fzf](https://github.com/junegunn/fzf)**: A general-purpose command-line fuzzy finder
   ```bash
-  pip install --upgrade pynvim
+  scoop bucket add main
+  scoop install main/fzf
   ```
-- **debugpy**:
-`C:/Users/santi/.pyenv/pyenv-win/versions/3.13.2/python.exe -m pip install debugpy`
+- **Treesitter**: Install parser using `:TSInstall {parser_name}`
 - **[mason](https://github.com/williamboman/mason.nvim)**: Utilized for installing LSP and DAP
 - **Avante**:
   Required environment variable `GEMINI_API_KEY`
@@ -48,6 +47,8 @@ If this directory does not exist, create it and put your config file there.
 - **[blink.cmp](https://github.com/Saghen/blink.cmp)**: A completion plugin for Neovim.
 - **[avante](https://github.com/yetone/avante.nvim)**: Emulate the behaviour of the Cursor IDE
 - **[vim-tig](https://github.com/codeindulgence/vim-tig)**: [Tig](https://jonas.github.io/tig/) integration
+- **[fzf.vim](https://github.com/junegunn/fzf.vim)**: fuzzy finder in Neovim
+- **[fugitive.vim](https://github.com/tpope/vim-fugitive)**: Git plugin for Vim
 
 ## Check Health
 Run the command `:checkhealth` in Neovim to check the health of your setup.
@@ -194,3 +195,34 @@ Run the command `:Noice` in Neovim to show a full message history
 | `<leader>cr` | Rename symbol        | n    |
 | `<leader>ca` | Code actions         | n    |
 | `<leader>cf` | Format code          | n    |
+
+**fzf**
+| Command                | List                                                                                  |
+|------------------------|---------------------------------------------------------------------------------------|
+| `:Files [PATH]`        | Files (runs `$FZF_DEFAULT_COMMAND` if defined)                                        |
+| `:GFiles [OPTS]`       | Git files (`git ls-files`)                                                            |
+| `:GFiles?`             | Git files (`git status`)                                                              |
+| `:Buffers`             | Open buffers                                                                          |
+| `:Colors`              | Color schemes                                                                         |
+| `:Ag [PATTERN]`        | [ag][ag] search result (`ALT-A` to select all, `ALT-D` to deselect all)               |
+| `:Rg [PATTERN]`        | [rg][rg] search result (`ALT-A` to select all, `ALT-D` to deselect all)               |
+| `:RG [PATTERN]`        | [rg][rg] search result; relaunch ripgrep on every keystroke                           |
+| `:Lines [QUERY]`       | Lines in loaded buffers                                                               |
+| `:BLines [QUERY]`      | Lines in the current buffer                                                           |
+| `:Tags [PREFIX]`       | Tags in the project (`ctags -R`)                                                      |
+| `:BTags [QUERY]`       | Tags in the current buffer                                                            |
+| `:Changes`             | Changelist across all open buffers                                                    |
+| `:Marks`               | Marks                                                                                 |
+| `:Jumps`               | Jumps                                                                                 |
+| `:Windows`             | Windows                                                                               |
+| `:Locate PATTERN`      | `locate` command output                                                               |
+| `:History`             | `v:oldfiles` and open buffers                                                         |
+| `:History:`            | Command history                                                                       |
+| `:History/`            | Search history                                                                        |
+| `:Snippets`            | Snippets ([UltiSnips][us])                                                            |
+| `:Commits [LOG_OPTS]`  | Git commits (requires [fugitive.vim][f])                                              |
+| `:BCommits [LOG_OPTS]` | Git commits for the current buffer; visual-select lines to track changes in the range |
+| `:Commands`            | Commands                                                                              |
+| `:Maps`                | Normal mode mappings                                                                  |
+| `:Helptags`            | Help tags <sup id="a1">[1](#helptags)</sup>                                           |
+| `:Filetypes`           | File types                                                                            |
