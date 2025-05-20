@@ -56,6 +56,9 @@ Run the command `:checkhealth` in Neovim to check the health of your setup.
 ## Message History
 Run the command `:Noice` in Neovim to show a full message history
 
+## Wakatime
+Type `:WakaTimeApiKey` to enter [API-KEY](https://wakatime.com/login?next=https://wakatime.com/settings/api-key)
+
 ## Tig
 | Command                                          | Description                          |
 |:-------------------------------------------------|:-------------------------------------|
@@ -70,9 +73,6 @@ Run the command `:Noice` in Neovim to show a full message history
 | `:Tig refs   [options]`                          | Start up in refs view                |
 | `:Tig stash  [options]`                          | Start up in stash view               |
 
-## Default shortcuts
-[Here](https://www.lazyvim.org/keymaps) you can find the list of default shortcuts for efficient navigation and editing in Neovim.
-
 **References**
 | Mode | Description           | How to Enter            |
 |:-----|:----------------------|:------------------------|
@@ -83,14 +83,34 @@ Run the command `:Noice` in Neovim to show a full message history
 | i    | Insert mode           | Press `i`               |
 | s    | Select mode           | Press `s`               |
 
+**Buffers**
+| Command               | Description       |
+|-----------------------|-------------------|
+| `:ls`                 | List open buffers |
+| `:files`              | List open buffers |
+| `:buffers`            | List open buffers |
+| `:bprevious`          | Previous buffer   |
+| `:bnext`              | Next buffer       |
+| `:bdelete <filename>` | Delete buffer     |
+| `:edit <filename>`    | Open buffer       |
+| `:split <filename>`   | horizontal split  |
+| `:vsplit <filename>`  | vertical split    |
+
+| Key  | Description     | Mode |
+|:-----|:----------------|------|
+| `nb` | Next buffer     | n    |
+| `pb` | Previous buffer | n    |
+
 **Blink**
 | Key       | Description         | Mode |
 |:----------|:--------------------|------|
-| `<ctrl>n` | Next suggestion     | n    |
-| `<ctrl>p` | Previous suggestion | n    |
-| `<ctrl>y` | Accept suggestion   | n    |
+| `<ctrl>n` | Next suggestion     | i    |
+| `<ctrl>p` | Previous suggestion | i    |
+| `<ctrl>y` | Accept suggestion   | i    |
+| `<ctrl>e` | Hide menu           | i    |
+| `<Tab>`   | Select first        | i    |
 
-**Surround**
+**mini-surround**
 | Key     | Description                  | Mode |
 |:--------|:-----------------------------|------|
 | `gsaw"` | Add " Surrounding            | n,v  |
@@ -114,18 +134,22 @@ Run the command `:Noice` in Neovim to show a full message history
 | Key          | Description | Mode |
 |:-------------|:------------|------|
 | `<leader>nt` | Open        | n    |
+| `a`          | New file    | n    |
 
 **Telescope**
-| Key          | Description        | Mode |
-|:-------------|:-------------------|------|
-| `<leader>ff` | Find Files         | n    |
-| `<leader>fb` | Find buffers       | n    |
-| `<leader>lg` | Open lazy git      | n    |
-| `<leader>fg` | Live Grep          | n    |
-| `<leader>fh` | Help Tags          | n    |
-| `<leader>fo` | Recent files       | n    |
-| `<ctrl>j`    | Next selection     | n    |
-| `<ctrl>k`    | Previous Selection | n    |
+| Key          | Description                     | Mode |
+|:-------------|:--------------------------------|------|
+| `<leader>ff` | Find Files                      | n    |
+| `<leader>fb` | Find buffers                    | n    |
+| `<leader>lg` | Open lazy git                   | n    |
+| `<leader>fg` | Live Grep                       | n    |
+| `<leader>fh` | Help Tags                       | n    |
+| `<leader>fo` | Recent files                    | n    |
+| `<ctrl>j`    | Next selection                  | n    |
+| `<ctrl>k`    | Previous Selection              | n    |
+| `<ctrl>t`    | Open file in new tab            | n    |
+| `<ctrl>x`    | Open file in new split          | n    |
+| `<ctrl>v`    | Open file in new vertical split | n    |
 
 **DAP**
 | Key          | Description                  | Mode |
@@ -149,10 +173,10 @@ Run the command `:Noice` in Neovim to show a full message history
 **mini-move**
 | Key      | Description | Mode |
 |:---------|:------------|------|
-| `<Ctl>h` | Move left   | n,v  |
-| `<Ctl>l` | Move right  | n,v  |
-| `<Ctl>j` | Move down   | n,v  |
-| `<Ctl>k` | Move up     | n,v  |
+| `<Alt>h` | Move left   | n,v  |
+| `<Alt>l` | Move right  | n,v  |
+| `<Alt>j` | Move down   | n,v  |
+| `<Alt>k` | Move up     | n,v  |
 
 **avante**
 | Key          | Description                                  | Mode |
@@ -177,11 +201,19 @@ Run the command `:Noice` in Neovim to show a full message history
 | `]]`         | jump to next codeblocks (results windows)    | n    |
 
 **LazyGit**
-| Key      | Description                            |
-|----------|----------------------------------------|
-| `:`      | Execute shell command                  |
-| `q`      | Quit                                   |
-| `<Ctl>t` | Open external diff tool (git difftool) |
+| Key       | Description                            |
+|-----------|----------------------------------------|
+| `:`       | Execute shell command                  |
+| `q`       | Quit                                   |
+| `<Ctl>t`  | Open external diff tool (git difftool) |
+| `.`       | Next page                              |
+| `,`       | Previous page                          |
+| `/`       | Search the current view by text        |
+| `]`       | Next tab                               |
+| `[`       | Previous tab                           |
+| `<Ctl>o`  | Copy path to clipboard                 |
+| `<Space>` | Toggle staged for selected file        |
+| `c`       | Commit staged changes                  |
 
 **LSP**
 | Key          | Description          | Mode |
