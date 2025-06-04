@@ -12,3 +12,5 @@ vim.api.nvim_set_keymap('n', '<leader>qa', ':qa<CR>', { noremap = true, silent =
 -- Key mappings for navigating to the next and previous buffers
 vim.api.nvim_set_keymap('n', 'nb', ':bnext<CR>', { noremap = true, silent = true })  -- Next buffer
 vim.api.nvim_set_keymap('n', 'pb', ':bprevious<CR>', { noremap = true, silent = true })  -- Previous buffer
+
+vim.api.nvim_set_keymap('n', '<leader>bb', ':b#<CR>', { noremap = true, silent = true })  -- Switch to alternate buffer

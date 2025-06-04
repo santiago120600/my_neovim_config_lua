@@ -150,6 +150,7 @@ Type `:WakaTimeApiKey` to enter [API-KEY](https://wakatime.com/login?next=https:
 | `<ctrl>t`    | Open file in new tab            | n    |
 | `<ctrl>x`    | Open file in new split          | n    |
 | `<ctrl>v`    | Open file in new vertical split | n    |
+| `<ctrl>d`    | Delete buffer                   | n    |
 
 **DAP**
 | Key          | Description                  | Mode |
