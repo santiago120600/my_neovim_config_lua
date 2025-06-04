@@ -27,6 +27,8 @@ local config = {
         "--add-modules=ALL-SYSTEM",
         "--add-opens", "java.base/java.util=ALL-UNNAMED",
         "--add-opens", "java.base/java.lang=ALL-UNNAMED",
+        "-javaagent:C:/Users/santi/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar",
+        "-Xbootclasspath/a:C:/Users/santi/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar",
         "-jar", path_to_jar,
         "-configuration", config_dir,
         "-data", workspace_dir,
