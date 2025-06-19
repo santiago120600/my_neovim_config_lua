@@ -131,10 +131,23 @@ Type `:WakaTimeApiKey` to enter [API-KEY](https://wakatime.com/login?next=https:
 | `<ctrl>w`      | Close current tab        | n    |
 
 **Neo-tree**
-| Key          | Description | Mode |
-|:-------------|:------------|------|
-| `<leader>nt` | Open        | n    |
-| `a`          | New file    | n    |
+| Key          | Description            | Mode |
+|:-------------|:-----------------------|------|
+| `<leader>nt` | Open                   | n    |
+| `a`          | New file               | n    |
+| `d`          | Delete                 | n    |
+| `y`          | Copy to clipboard      | n    |
+| `x`          | Cut to clipboard       | n    |
+| `p`          | Paste from clipboard   | n    |
+| `c`          | copy                   | n    |
+| `D`          | Fuzzy finder directory | n    |
+| `[g`         | Prev git modified      | n    |
+| `]g`         | Next git modified      | n    |
+| `H`          | Toggle hidden          | n    |
+| `s`          | Open vsplit            | n    |
+| `i`          | Show file details      | n    |
+| `m`          | move                   | n    |
+| `b`          | Rename basename        | n    |
 
 **Telescope**
 | Key          | Description                     | Mode |
@@ -257,5 +270,17 @@ Type `:WakaTimeApiKey` to enter [API-KEY](https://wakatime.com/login?next=https:
 | `:BCommits [LOG_OPTS]` | Git commits for the current buffer; visual-select lines to track changes in the range |
 | `:Commands`            | Commands                                                                              |
 | `:Maps`                | Normal mode mappings                                                                  |
-| `:Helptags`            | Help tags <sup id="a1">[1](#helptags)</sup>                                           |
+| `:Helptags`            | Help tags                                                                             |
 | `:Filetypes`           | File types                                                                            |
+
+**Jumps**
+| Key        | Description                                                    | Mode |
+|------------|----------------------------------------------------------------|------|
+| `<Ctl>o`   | jump back to the previous position in the jump list            | n    |
+| `<Ctl>i`   | jump forward                                                   | n    |
+| `''`       | jump to the last position where you made an edit               | n    |
+| ``` `` ``` | jump to the exact position (line and column) of your last jump | n    |
+
+| Command  | Description  |
+|----------|--------------|
+| `:jumps` | Jump history |

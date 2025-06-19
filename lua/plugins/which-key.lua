@@ -9,7 +9,11 @@ return {
     defaults = {
       ["<leader>"] = {
         a = { name = "+Avante" },
-        c = { name = "+Code (LSP/DAP)" },
+        c = { 
+          name = "+Code (LSP/DAP)",
+          o = { name = "Organize Imports (JDTLS)" },
+          e = { name = "Extract Variable" },
+         },
         d = { name = "+Debug" },
         f = { name = "+Find/Files" },
         g = { name = "+Git" },
